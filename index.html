@@ -1,104 +1,196 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Moonsu Kim | Portfolio</title>
+  <meta
+    name="description"
+    content="Moonsu Kim, software engineer interested in AI optimization, software testing, and systems programming."
+  />
+  <title>Moonsu Kim | Software Engineer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <nav>
-      <div class="logo">Moonsu Kim</div>
+  <header class="site-header">
+    <nav class="topbar" aria-label="Primary navigation">
+      <a class="brand" href="#top">Moonsu Kim</a>
       <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+        <a href="#education">Education</a>
+        <a href="#awards">Awards</a>
+        <a href="#documents">Documents</a>
       </div>
     </nav>
 
-    <section class="hero-content">
-      <p class="tag">Software Engineer · AI Optimization · Symbolic Execution</p>
-      <h1>안녕하세요, 김문수입니다.</h1>
-      <p class="intro">
-        AI 추론 최적화, 소프트웨어 테스팅, 임베디드/시스템 개발에 관심이 있는
-        성균관대학교 소프트웨어학과 학생입니다.
+    <section id="top" class="intro-section">
+      <p class="eyebrow">Software Engineer</p>
+      <h1>Moonsu Kim</h1>
+      <p class="lead">
+        I work across AI inference optimization, symbolic execution, software testing,
+        and practical automation. I like building tools that make complex systems easier
+        to understand, measure, and improve.
       </p>
-      <div class="buttons">
-        <a href="#projects" class="btn primary">프로젝트 보기</a>
-        <a href="assets/resume.pdf" class="btn secondary">Resume</a>
-      </div>
+
+      <address class="contact-list">
+        <a href="mailto:kimmail99@g.skku.edu">kimmail99@g.skku.edu</a>
+        <a href="https://github.com/kimmail99">github.com/kimmail99</a>
+        <span>Seoul, South Korea</span>
+      </address>
     </section>
   </header>
 
   <main>
-    <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>
-        저는 C/C++, Python 기반의 시스템 개발과 AI 모델 최적화에 관심이 있습니다.
-        KATUSA 복무 중 자동화 도구를 개발했고, 연구실에서는 symbolic execution 기반
-        소프트웨어 테스팅 연구를 수행했습니다.
-      </p>
+    <section class="section snapshot" aria-labelledby="snapshot-title">
+      <h2 id="snapshot-title">Profile</h2>
+      <div class="summary-grid">
+        <p>
+          Undergraduate software engineer with experience in research, military operations,
+          and AI systems optimization.
+        </p>
+        <p>
+          Main interests: C/C++, Python, AI inference engines, symbolic execution,
+          automation, and developer tools.
+        </p>
+      </div>
     </section>
 
-    <section id="projects" class="section">
-      <h2>Projects</h2>
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Work</p>
+        <h2 id="experience-title">Experience</h2>
+      </div>
 
-      <div class="grid">
-        <article class="card">
-          <h3>AI Inference Optimization</h3>
+      <div class="stack">
+        <details class="item-card" open>
+          <summary>
+            <span>
+              <strong>SoyNet</strong>
+              <small>AI Inference Engine Optimization Intern</small>
+            </span>
+            <time>Period to confirm</time>
+          </summary>
           <p>
-            PyTorch 모델을 분석하고 CUDA/TensorRT 기반으로 추론 속도를 최적화한 프로젝트입니다.
+            Worked on AI inference engine optimization, model analysis, and performance
+            improvement workflows. Focused on understanding how runtime behavior,
+            model structure, and deployment constraints affect inference speed.
           </p>
-          <span>CUDA · TensorRT · PyTorch</span>
+          <ul class="compact-list">
+            <li>Analyzed PyTorch model behavior and bottlenecks.</li>
+            <li>Explored CUDA/TensorRT-based optimization workflows.</li>
+            <li>Documented experiment results for reproducible comparison.</li>
+          </ul>
+        </details>
+
+        <details class="item-card">
+          <summary>
+            <span>
+              <strong>KATUSA, Eighth Army</strong>
+              <small>Interpreter & Automation Tool Developer</small>
+            </span>
+            <time>Period to confirm</time>
+          </summary>
+          <p>
+            Served in a bilingual operational environment and built automation tools
+            to reduce repetitive reporting work. Developed a VBA-based tool for visualizing
+            UAS movement routes and supporting report generation.
+          </p>
+          <ul class="compact-list">
+            <li>Supported English-Korean communication in operational settings.</li>
+            <li>Built spreadsheet automation for route visualization and reporting.</li>
+            <li>Improved the speed and consistency of routine documentation.</li>
+          </ul>
+        </details>
+
+        <details class="item-card">
+          <summary>
+            <span>
+              <strong>Software Analysis Lab</strong>
+              <small>Undergraduate Research Intern</small>
+            </span>
+            <time>Period to confirm</time>
+          </summary>
+          <p>
+            Conducted research around symbolic execution and software testing. Worked on
+            FeatSym, a project combining state feature extraction with external parameter
+            tuning for symbolic execution.
+          </p>
+          <ul class="compact-list">
+            <li>Studied symbolic execution and KLEE-based testing workflows.</li>
+            <li>Implemented and evaluated state feature extraction ideas.</li>
+            <li>Connected research experiments with measurable testing outcomes.</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <section id="education" class="section" aria-labelledby="education-title">
+      <div class="section-heading">
+        <p class="eyebrow">Academic Background</p>
+        <h2 id="education-title">Education</h2>
+      </div>
+
+      <div class="two-column">
+        <article class="plain-card">
+          <h3>Sungkyunkwan University</h3>
+          <p>Computer Science and Engineering</p>
+          <span>Graduation date to confirm</span>
         </article>
 
-        <article class="card">
-          <h3>FeatSym</h3>
-          <p>
-            Symbolic Execution에서 상태 특징 추출과 외부 파라미터 튜닝을 결합한 연구 프로젝트입니다.
-          </p>
-          <span>KLEE · C++ · Software Testing</span>
-        </article>
-
-        <article class="card">
-          <h3>UAS Tracking Tool</h3>
-          <p>
-            KATUSA 복무 중 UAS 이동 경로 시각화와 보고 자동화를 위한 VBA 기반 도구를 개발했습니다.
-          </p>
-          <span>VBA · Automation · Visualization</span>
+        <article class="plain-card">
+          <h3>Dankook University</h3>
+          <p>Undergraduate Study</p>
+          <span>Period to confirm</span>
         </article>
       </div>
     </section>
 
-    <section id="experience" class="section">
-      <h2>Experience</h2>
-      <ul class="timeline">
-        <li>
-          <strong>Software Analysis Lab</strong>
-          <p>Undergraduate Research Intern · Symbolic Execution Research</p>
-        </li>
-        <li>
-          <strong>SoINet Internship</strong>
-          <p>AI Inference Engine Optimization</p>
-        </li>
-        <li>
-          <strong>KATUSA, Eighth Army</strong>
-          <p>Interpreter & Automation Tool Developer</p>
-        </li>
-      </ul>
+    <section id="awards" class="section" aria-labelledby="awards-title">
+      <div class="section-heading">
+        <p class="eyebrow">Recognition</p>
+        <h2 id="awards-title">Awards & Medals</h2>
+      </div>
+
+      <div class="stack">
+        <details class="item-card">
+          <summary>
+            <span>
+              <strong>Awards and Medals</strong>
+              <small>Selected recognitions from academic and service experience</small>
+            </span>
+            <time>Details to confirm</time>
+          </summary>
+          <p>
+            Add award names, issuing organizations, dates, and short context here.
+            This section is prepared to show a concise list first and reveal details
+            only when selected.
+          </p>
+        </details>
+      </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <h2>Contact</h2>
-      <p>Email: kimmail99@g.skku.edu</p>
-      <p>GitHub: @kimmail99</p>
+    <section id="documents" class="section" aria-labelledby="documents-title">
+      <div class="section-heading">
+        <p class="eyebrow">Portfolio Archive</p>
+        <h2 id="documents-title">Documents</h2>
+      </div>
+
+      <div class="document-panel">
+        <p>
+          Store portfolio files in <code>assets/docs/</code> and link them here.
+          Recommended files include a resume PDF, project reports, research notes,
+          certificates, and presentation slides.
+        </p>
+        <ul class="document-list">
+          <li><span>Resume PDF</span><code>assets/docs/resume.pdf</code></li>
+          <li><span>FeatSym Research Note</span><code>assets/docs/featsym-report.pdf</code></li>
+          <li><span>SoyNet Internship Summary</span><code>assets/docs/soynet-summary.pdf</code></li>
+        </ul>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 Moonsu Kim. All rights reserved.</p>
+  <footer class="site-footer">
+    <p>© 2026 Moonsu Kim</p>
   </footer>
 </body>
 </html>
