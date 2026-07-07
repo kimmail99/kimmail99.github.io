@@ -5,192 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="Moonsu Kim, software engineer interested in AI optimization, software testing, and systems programming."
+    content="Moonsu Kim, software engineer focused on AI optimization, software verification, and automation."
   />
   <title>Moonsu Kim | Software Engineer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <nav class="topbar" aria-label="Primary navigation">
-      <a class="brand" href="#top">Moonsu Kim</a>
-      <div class="nav-links">
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#awards">Awards</a>
-        <a href="#documents">Documents</a>
-      </div>
-    </nav>
-
-    <section id="top" class="intro-section">
-      <p class="eyebrow">Software Engineer</p>
-      <h1>Moonsu Kim</h1>
-      <p class="lead">
-        I work across AI inference optimization, symbolic execution, software testing,
-        and practical automation. I like building tools that make complex systems easier
-        to understand, measure, and improve.
-      </p>
-
-      <address class="contact-list">
-        <a href="mailto:kimmail99@g.skku.edu">kimmail99@g.skku.edu</a>
+  <main class="home-shell">
+    <section class="hero-center" aria-labelledby="page-title">
+      <p class="role">Software Engineer</p>
+      <h1 id="page-title">Moonsu Kim</h1>
+      <div class="contact-line" aria-label="Contact information">
+        <a href="mailto:kimmail99@naver.com">kimmail99@naver.com</a>
+        <span>+82-10-7379-6263</span>
         <a href="https://github.com/kimmail99">github.com/kimmail99</a>
-        <span>Seoul, South Korea</span>
-      </address>
-    </section>
-  </header>
-
-  <main>
-    <section class="section snapshot" aria-labelledby="snapshot-title">
-      <h2 id="snapshot-title">Profile</h2>
-      <div class="summary-grid">
-        <p>
-          Undergraduate software engineer with experience in research, military operations,
-          and AI systems optimization.
-        </p>
-        <p>
-          Main interests: C/C++, Python, AI inference engines, symbolic execution,
-          automation, and developer tools.
-        </p>
       </div>
     </section>
 
-    <section id="experience" class="section" aria-labelledby="experience-title">
-      <div class="section-heading">
-        <p class="eyebrow">Selected Work</p>
-        <h2 id="experience-title">Experience</h2>
-      </div>
+    <section class="quick-grid" aria-label="Portfolio overview">
+      <article class="feature-card education-card">
+        <p class="card-kicker">Academic Background</p>
+        <h2>Education</h2>
+        <div class="mini-list">
+          <p><strong>Sungkyunkwan University</strong><span>Computer Science and Engineering</span></p>
+          <p><strong>Dankook University</strong><span>Undergraduate study</span></p>
+        </div>
+      </article>
 
-      <div class="stack">
-        <details class="item-card" open>
-          <summary>
-            <span>
-              <strong>SoyNet</strong>
-              <small>AI Inference Engine Optimization Intern</small>
-            </span>
-            <time>Period to confirm</time>
-          </summary>
-          <p>
-            Worked on AI inference engine optimization, model analysis, and performance
-            improvement workflows. Focused on understanding how runtime behavior,
-            model structure, and deployment constraints affect inference speed.
-          </p>
-          <ul class="compact-list">
-            <li>Analyzed PyTorch model behavior and bottlenecks.</li>
-            <li>Explored CUDA/TensorRT-based optimization workflows.</li>
-            <li>Documented experiment results for reproducible comparison.</li>
-          </ul>
-        </details>
+      <article class="feature-card">
+        <p class="card-kicker">Selected Work</p>
+        <h2><a href="experience.html">Experience</a></h2>
+        <div class="mini-list">
+          <p><strong>SoyNet</strong><span>Deep learning inference optimization, Apr. 2022 - Dec. 2022</span></p>
+          <p><strong>KATUSA, Eighth Army</strong><span>Interpreter and VBA automation tool developer</span></p>
+          <p><strong>Software Analysis Lab</strong><span>Research intern, May 17, 2024 - Dec. 18, 2024</span></p>
+        </div>
+      </article>
 
-        <details class="item-card">
-          <summary>
-            <span>
-              <strong>KATUSA, Eighth Army</strong>
-              <small>Interpreter & Automation Tool Developer</small>
-            </span>
-            <time>Period to confirm</time>
-          </summary>
-          <p>
-            Served in a bilingual operational environment and built automation tools
-            to reduce repetitive reporting work. Developed a VBA-based tool for visualizing
-            UAS movement routes and supporting report generation.
-          </p>
-          <ul class="compact-list">
-            <li>Supported English-Korean communication in operational settings.</li>
-            <li>Built spreadsheet automation for route visualization and reporting.</li>
-            <li>Improved the speed and consistency of routine documentation.</li>
-          </ul>
-        </details>
-
-        <details class="item-card">
-          <summary>
-            <span>
-              <strong>Software Analysis Lab</strong>
-              <small>Undergraduate Research Intern</small>
-            </span>
-            <time>Period to confirm</time>
-          </summary>
-          <p>
-            Conducted research around symbolic execution and software testing. Worked on
-            FeatSym, a project combining state feature extraction with external parameter
-            tuning for symbolic execution.
-          </p>
-          <ul class="compact-list">
-            <li>Studied symbolic execution and KLEE-based testing workflows.</li>
-            <li>Implemented and evaluated state feature extraction ideas.</li>
-            <li>Connected research experiments with measurable testing outcomes.</li>
-          </ul>
-        </details>
-      </div>
+      <article class="feature-card">
+        <p class="card-kicker">Recognition</p>
+        <h2><a href="awards.html">Award/Medal</a></h2>
+        <div class="mini-list">
+          <p><strong>Research Paper / Project Silver Award</strong><span>May 28, 2025</span></p>
+          <p><strong>Creativity Award</strong><span>June 7, 2023</span></p>
+          <p><strong>Army Commendation Medal</strong><span>Mar. 29, 2024</span></p>
+        </div>
+      </article>
     </section>
 
-    <section id="education" class="section" aria-labelledby="education-title">
-      <div class="section-heading">
-        <p class="eyebrow">Academic Background</p>
-        <h2 id="education-title">Education</h2>
-      </div>
-
-      <div class="two-column">
-        <article class="plain-card">
-          <h3>Sungkyunkwan University</h3>
-          <p>Computer Science and Engineering</p>
-          <span>Graduation date to confirm</span>
-        </article>
-
-        <article class="plain-card">
-          <h3>Dankook University</h3>
-          <p>Undergraduate Study</p>
-          <span>Period to confirm</span>
-        </article>
-      </div>
-    </section>
-
-    <section id="awards" class="section" aria-labelledby="awards-title">
-      <div class="section-heading">
-        <p class="eyebrow">Recognition</p>
-        <h2 id="awards-title">Awards & Medals</h2>
-      </div>
-
-      <div class="stack">
-        <details class="item-card">
-          <summary>
-            <span>
-              <strong>Awards and Medals</strong>
-              <small>Selected recognitions from academic and service experience</small>
-            </span>
-            <time>Details to confirm</time>
-          </summary>
-          <p>
-            Add award names, issuing organizations, dates, and short context here.
-            This section is prepared to show a concise list first and reveal details
-            only when selected.
-          </p>
-        </details>
-      </div>
-    </section>
-
-    <section id="documents" class="section" aria-labelledby="documents-title">
-      <div class="section-heading">
-        <p class="eyebrow">Portfolio Archive</p>
-        <h2 id="documents-title">Documents</h2>
-      </div>
-
-      <div class="document-panel">
-        <p>
-          Store portfolio files in <code>assets/docs/</code> and link them here.
-          Recommended files include a resume PDF, project reports, research notes,
-          certificates, and presentation slides.
-        </p>
-        <ul class="document-list">
-          <li><span>Resume PDF</span><code>assets/docs/resume.pdf</code></li>
-          <li><span>FeatSym Research Note</span><code>assets/docs/featsym-report.pdf</code></li>
-          <li><span>SoyNet Internship Summary</span><code>assets/docs/soynet-summary.pdf</code></li>
-        </ul>
-      </div>
+    <section class="skills-strip" aria-label="Skills">
+      <p><strong>Strong</strong> C/C++, Python</p>
+      <p><strong>Knowledgeable</strong> Node.js, TensorRT, CUDA, PyTorch, VBA, Kotlin, AWS, Firebase</p>
+      <p><strong>Tools</strong> Git, Docker, Linux, Vim, Visual Studio, Xcode</p>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <p>© 2026 Moonsu Kim</p>
-  </footer>
 </body>
 </html>
