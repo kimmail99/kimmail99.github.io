@@ -8,6 +8,7 @@ Current files:
 - `software-verification-paper.pdf`
 - `research-paper-silver-award.pdf`
 - `startup-competition-creativity-award.pdf`
-- `army-commendation-medal.pdf`
+- `army-commendation-medal-and-recommendation.pdf`
+- `ai-project-class-paper.pdf`
 
 Use lowercase, hyphen-separated filenames for new documents.
