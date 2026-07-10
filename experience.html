@@ -11,81 +11,76 @@
     <a class="back-link" href="index.html">Back to home</a>
     <p class="role">Selected Work</p>
     <h1>Experience</h1>
-    <p>
-      A closer look at my internship, research, and military automation work.
-      Each item connects the work to supporting documents or project evidence.
-    </p>
   </header>
 
   <main class="detail-shell">
     <article class="detail-card">
       <div class="detail-title">
-        <p class="card-kicker">Apr. 2022 - Dec. 2022</p>
-        <h2>SoyNet</h2>
-        <span>Industry-Academic Collaboration Project</span>
+        <p class="card-kicker">Jun 25, 2024 - Jul. 4, 2025</p>
+        <h2>Software Analysis Lab</h2>
+        <span>Research Intern, Sungkyunkwan Univ.</span>
       </div>
       <div class="detail-body">
         <p>
-          Optimized deep learning inference performance for image, video, and language
-          models using TensorRT and CUDA C++. The work focused on practical deployment
-          concerns: preprocessing, postprocessing, memory usage, execution time, and
-          reusable C++ module structure.
+          Designed and evaluated methods for combining two advanced symbolic execution
+          techniques in KLEE: a search strategy and an external parameter tuning strategy.
+          The research proposed three fusion models, Parallel, Balanced, and Alternating,
+          to study whether heterogeneous symbolic execution techniques can improve
+          testing performance when used together.
         </p>
         <ul>
-          <li>Built and modularized C++ preprocessing and postprocessing pipelines with OpenCV.</li>
-          <li>Analyzed GPU memory usage and runtime behavior to validate optimization effects.</li>
-          <li>Achieved an average 3x inference speedup and 70% reduction in GPU memory usage.</li>
+          <li>Designed fusion mechanisms that exchange feedback between path selection and parameter tuning modules.</li>
+          <li>Evaluated the models on five GNU C benchmarks with 36,000-second KLEE runs.</li>
+          <li>Showed that Alternating Fusion achieved the best average branch coverage, outperforming KLEE by 131.8%.</li>
+          <li>Found a segmentation fault in combine-0.4.0 that baseline KLEE and the individual strategies missed.</li>
+          <li>Authored and presented the work as first author at KCC2025.</li>
         </ul>
         <div class="evidence-row">
-          <a href="assets/documents/soynet-internship-details.pdf">Internship detail PDF</a>
+          <a href="assets/documents/software-verification-paper.pdf">Original Paper Korean PDF</a>
+          <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318186">DBpia article</a>
         </div>
       </div>
     </article>
-
     <article class="detail-card">
       <div class="detail-title">
-        <p class="card-kicker">KATUSA Service</p>
-        <h2>KATUSA, Eighth Army</h2>
-        <span>Interpreter & Automation Tool Developer</span>
+        <p class="card-kicker">Dec 26, 2022 - Jun. 25, 2024</p>
+        <h2>KATUSA, 8th Army</h2>
+        <span>Soldier, Operations Support</span>
       </div>
       <div class="detail-body">
         <p>
-          Served in a bilingual operational environment and developed an Excel VBA-based
-          UAS tracking and reporting automation tool. The tool was used during the
-          Freedom Shield exercise and helped standardize repetitive reporting work.
+          Served as a KATUSA in a U.S. Army unit and developed an Excel
+          VBA-based UAS tracking and reporting automation tool for bilingual
+          operational reporting. The tool was used during the Freedom Shield exercise.
         </p>
         <ul>
           <li>Supported English-Korean communication in operational settings.</li>
-          <li>Developed a VBA automation workflow for UAS route visualization and reports.</li>
-          <li>Received the Army Commendation Medal for the automation contribution.</li>
+          <li>Built a VBA tool that maps observable deployed TOD assets from input latitude and longitude coordinates, supporting CAL/DAL list placement during operations.</li>
         </ul>
-        <div class="evidence-row">
-          <a href="assets/documents/army-commendation-medal.pdf">Army Commendation Medal PDF</a>
-        </div>
       </div>
     </article>
-
     <article class="detail-card">
       <div class="detail-title">
-        <p class="card-kicker">May 17, 2024 - Dec. 18, 2024</p>
-        <h2>Software Analysis Lab</h2>
-        <span>Research Intern, Sungkyunkwan University</span>
+        <p class="card-kicker">Apr. 2022 - Dec. 2022</p>
+        <h2>SoyNet</h2>
+        <span>Industry Collaboration Intern</span>
       </div>
       <div class="detail-body">
         <p>
-          Conducted software verification research based on KLEE symbolic execution.
-          The project studied how to improve path exploration efficiency and code
-          coverage by combining symbolic execution strategies with ML-based path selection.
+          Optimized inference pipelines for open-source deep learning models across
+          classification, segmentation, object detection, pose estimation, and language
+          tasks, including VGG16/19, EfficientNet-B6, FCN, YOLOX-X, PoseNet
+          Transpose-h-a4, and BART_Paragraph. The work focused on converting model
+          behavior into deployable C++/CUDA engine components.
         </p>
         <ul>
-          <li>Designed and modularized an ML-based path selection strategy with dynamic feedback.</li>
-          <li>Evaluated five C benchmarks with 10-hour runs and found a new bug.</li>
-          <li>Presented the work as first author at KCC 2025 and won a Silver Award.</li>
+          <li>Analyzed open-source input pipelines and implemented GPU-optimized preprocessing modules in C++/CUDA.</li>
+          <li>Traced model execution graphs, documented layer-level DAG structures, and wrote engine config files.</li>
+          <li>Implemented model-specific postprocessing logic for detection, segmentation, and classification outputs.</li>
+          <li>Achieved up to 3x faster inference and 70% lower GPU memory usage compared with open-source baselines.</li>
         </ul>
         <div class="evidence-row">
-          <a href="assets/documents/software-verification-paper.pdf">Research paper PDF</a>
-          <a href="assets/documents/research-paper-silver-award.pdf">Paper award PDF</a>
-          <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318186">DBpia article</a>
+          <a href="assets/documents/soynet-internship-details.pdf">Internship detail PDF</a>
         </div>
       </div>
     </article>
@@ -94,6 +89,14 @@
       <h2>Additional Projects</h2>
       <div class="project-grid">
         <article>
+          <h3>Prompt-Enhanced AI Chatbot</h3>
+          <p>
+            Developed an Android chatbot using Kotlin, OkHttp3, OpenAI API, Firebase Auth,
+            Firestore, and a prompt-engineering pipeline for refined user questions.
+          </p>
+          <a href="https://github.com/kimmail99/Prompt_Enhanced_AI_ChatBot.git">GitHub repository</a>
+        </article>
+        <article>
           <h3>AI News Video Automation Pipeline</h3>
           <p>
             Built an AI automation system that collects Korean news, scores articles,
@@ -101,14 +104,6 @@
             The applied channel reached 11,000 subscribers within two months.
           </p>
           <a href="assets/images/ai-news-channel-performance.png">Channel performance image</a>
-        </article>
-        <article>
-          <h3>Prompt-Enhanced AI Chatbot</h3>
-          <p>
-            Developed an Android chatbot using Kotlin, OkHttp3, OpenAI API, Firebase Auth,
-            Firestore, and a prompt-engineering pipeline for refined user questions.
-          </p>
-          <a href="https://github.com/kimmail99/Prompt_Enhanced_AI_ChatBot.git">GitHub repository</a>
         </article>
       </div>
     </section>
