@@ -49,10 +49,37 @@ a:hover {
 }
 
 .home-shell {
+  position: relative;
   width: min(1120px, calc(100% - 40px));
   min-height: 100vh;
   margin: 0 auto;
   padding: 72px 0 52px;
+}
+
+.language-switch {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.language-switch span {
+  color: var(--line);
+}
+
+.language-switch a {
+  padding: 2px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.language-switch a[aria-current="page"] {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
 }
 
 .hero-center {
@@ -216,9 +243,14 @@ p {
 }
 
 .page-header {
+  position: relative;
   width: min(980px, calc(100% - 40px));
   margin: 0 auto;
   padding: 42px 0 28px;
+}
+
+.page-header .language-switch {
+  top: 42px;
 }
 
 .back-link {
@@ -403,6 +435,14 @@ p {
 
   .hero-center {
     padding-top: 38px;
+  }
+
+  .language-switch {
+    top: 22px;
+  }
+
+  .page-header .language-switch {
+    top: 42px;
   }
 
   .contact-line {
