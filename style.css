@@ -159,7 +159,17 @@ p {
 }
 
 .feature-card h2 a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
   border-bottom: 3px solid var(--accent);
+}
+
+.click-hint {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
 }
 
 .education-card:hover {
